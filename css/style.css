@@ -29,8 +29,8 @@ header {
   align-items: center;
   padding: 20px 100px;
   background: transparent;
-  /* backdrop-filter: blur(10px); */
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.5); */
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   transition: 1s;
   z-index: 1300;
 }
@@ -227,7 +227,7 @@ header.active {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: scale(0) translate(-50%, -50%);
   width: 60vw;
   z-index: 1100;
   transition: ease-in-out 3s;
