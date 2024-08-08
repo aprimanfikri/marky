@@ -240,8 +240,8 @@ header.active {
 
 .bg-slide .content p {
   font-family: 'Great Vibes', cursive;
-  font-weight: 200;
-  font-size: 1.5em;
+  font-weight: 300;
+  font-size: 5em;
   letter-spacing: 1px;
 }
 
@@ -349,7 +349,7 @@ header.active {
 .slide-loader {
   position: absolute;
   z-index: 1100;
-  bottom: 50px;
+  bottom: 100px;
   right: 100px;
   display: flex;
   gap: 20px;
@@ -389,7 +389,7 @@ header.active {
 
 .share {
   position: absolute;
-  bottom: 50px;
+  bottom: 100px;
   left: 50px;
   display: flex;
   flex-direction: column;
@@ -549,6 +549,7 @@ section p {
 .about .img-box img {
   max-width: 450px;
 }
+
 .about .img-box .corner-img {
   position: absolute;
   width: 15vw;
@@ -977,6 +978,7 @@ section p {
 
   .about h4 {
     margin-top: 50px;
+    font-size: 1.5em;
   }
 
   .section-bg-img {
@@ -995,5 +997,97 @@ section p {
   .contact .info h4,
   .contact .info p {
     padding: 0;
+  }
+
+  .bg-slide .content p {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 500;
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+
+  .slide-loader {
+    position: absolute;
+    z-index: 1100;
+    bottom: 80px;
+    right: 30px;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 0;
+  }
+}
+
+.pink {
+  color: var(--primary);
+}
+
+.account img {
+  width: 100%;
+  height: 100%;
+  max-width: 250px;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.account-item img {
+  width: 200px;
+  height: auto;
+}
+
+.account-info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.account-info h2 {
+  margin: 0;
+}
+
+.account-info p {
+  margin: 5px 0;
+}
+
+.copy-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: relative;
+}
+
+.copy-btn:hover {
+  background-color: #0056b3;
+}
+
+.copy-feedback {
+  display: none;
+  margin-left: 10px;
+  font-size: 0.9em;
+  color: green;
+}
+
+@media (max-width: 768px) {
+  .account-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .account-item img {
+    margin-bottom: 10px;
   }
 }

@@ -17,6 +17,11 @@
   </head>
   <body>
     <!-- Header -->
+    <audio id="backgroundMusic" controls>
+      <source src="./images/lagu.mp3" type="audio/mp3" />
+      Browser Anda tidak mendukung elemen audio.
+    </audio>
+
     <header>
       <a href="#" class="logo">Wedding</a>
       <a href="#" class="menu" onclick="toggleMenu();"
@@ -60,7 +65,9 @@
       <div class="bg-slide slide-1 active">
         <div class="content">
           <h1>Wedding</h1>
-          <p>apa iay</p>
+          <p>Join us to celebrate the wedding of</p>
+          <p><span class="pink">T</span>io & <span class="pink">K</span>iky</p>
+          <p>11 August 2024</p>
         </div>
         <div class="circle bg">
           <img src="./images/wedding-1.jpg" alt="" />
@@ -75,12 +82,7 @@
       <div class="bg-slide slide-2">
         <div class="content">
           <h1>Ceremony</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-            suscipit, ex, tenetur asperiores, iure quam commodi quibusdam illum
-            magni voluptatem dolor repudiandae laboriosam odio consequatur
-            cumque libero ad placeat quidem.
-          </p>
+          <p>Resepsi Pernikahan akan diadakan pada tanggal 11 Agustus 2024.</p>
         </div>
         <div class="circle bg">
           <img src="./images/wedding-2.jpg" alt="" />
@@ -92,32 +94,13 @@
           </div>
         </div>
       </div>
-      <div class="bg-slide slide-3">
-        <div class="content">
-          <h1>Honeymoon</h1>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste
-            suscipit, ex, tenetur asperiores, iure quam commodi quibusdam illum
-            magni voluptatem dolor repudiandae laboriosam odio consequatur
-            cumque libero ad placeat quidem.
-          </p>
-        </div>
-        <div class="circle bg">
-          <img src="./images/wedding-3.jpg" alt="" />
-          <div class="circle large">
-            <img src="./images/wedding-3.jpg" alt="" />
-            <div class="circle small">
-              <img src="./images/wedding-3.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+
       <ul class="slide-loader">
         <li>
           <a href="#" class="slide-btn active" data-target="slide-1">1</a>
         </li>
         <li><a href="#" class="slide-btn" data-target="slide-2">2</a></li>
-        <li><a href="#" class="slide-btn" data-target="slide-3">3</a></li>
+        <!-- <li><a href="#" class="slide-btn" data-target="slide-3">3</a></li> -->
       </ul>
       <div class="share">
         <p>share</p>
@@ -267,78 +250,90 @@
           </div>
           <ul id="portfolio-filters" class="d-flex justify-content-center">
             <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-engagement">Engagement</li>
             <li data-filter=".filter-wedding">Wedding</li>
-            <li data-filter=".filter-ceremony">Ceremony</li>
             <li data-filter=".filter-honeymoon">Honeymoon</li>
           </ul>
           <div class="row portfolio-container">
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-engagement">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/lamaran.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-engagement">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/lamaran1.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-engagement">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/lamaran2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
             <div class="col-lg-4 col-mg-6 portfolio-item filter-wedding">
               <div class="portfolio-img">
                 <img
-                  class="img-fluid"
-                  src="./images/portfolio/portfolio-1.jpg"
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/Wedding.jpg"
                   alt=""
                 />
-              </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 1</h4>
-                <p>Wedding Planning 1</p>
-                <a
-                  href="./images/portfolio/portfolio-1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 1"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
               </div>
             </div>
-            <div class="col-lg-4 col-mg-6 portfolio-item filter-ceremony">
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-wedding">
               <div class="portfolio-img">
                 <img
-                  class="img-fluid"
-                  src="./images/portfolio/portfolio-2.jpg"
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/Wedding1.jpg"
                   alt=""
                 />
               </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 1</h4>
-                <p>Wedding Planning 1</p>
-                <a
-                  href="./images/portfolio/portfolio-1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 1"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
+            </div>
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-wedding">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/Wedding2.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-wedding">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/Wedding3.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-lg-4 col-mg-6 portfolio-item filter-wedding">
+              <div class="portfolio-img">
+                <img
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/mareko/Wedding4.jpg"
+                  alt=""
+                />
               </div>
             </div>
             <div class="col-lg-4 col-mg-6 portfolio-item filter-honeymoon">
               <div class="portfolio-img">
                 <img
-                  class="img-fluid"
-                  src="./images/portfolio/portfolio-3.jpg"
+                  class="img-fluid portfolio-lightbox preview-link"
+                  src="./images/kamingsun.jpg"
                   alt=""
                 />
-              </div>
-              <div class="portfolio-info">
-                <h4>Wedding Planning 1</h4>
-                <p>Wedding Planning 1</p>
-                <a
-                  href="./images/portfolio/portfolio-1.jpg"
-                  data-gallery="portfolioGallery"
-                  class="portfolio-lightbox preview-link"
-                  title="Wedding Planning 1"
-                  ><ion-icon name="add-outline"></ion-icon
-                ></a>
-                <a href="#" class="details-link" title="More Details"
-                  ><ion-icon name="link-outline"></ion-icon
-                ></a>
               </div>
             </div>
           </div>
@@ -382,47 +377,33 @@
               </div>
             </div>
             <div class="col-lg-8 mt-5 mt-lg-8">
-              <form action="">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Name"
-                      required
-                    />
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Your Email"
-                      required
-                    />
+              <div class="account">
+                <div class="account-item">
+                  <img src="./images/mandiri.png" alt="" />
+                  <div class="account-info">
+                    <h2>Setyo Abdi Nugroho</h2>
+                    <p>1390028551863</p>
+                    <button
+                      class="copy-btn"
+                      data-clipboard-text="1390028551863"
+                    >
+                      Copy
+                    </button>
+                    <span class="copy-feedback">Copied!</span>
                   </div>
                 </div>
-                <div class="form-group mt-3">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Subject"
-                    required
-                  />
+                <div class="account-item">
+                  <img src="./images/bca.png" alt="" />
+                  <div class="account-info">
+                    <h2>Kirana Apsari</h2>
+                    <p>600125981</p>
+                    <button class="copy-btn" data-clipboard-text="600125981">
+                      Copy
+                    </button>
+                    <span class="copy-feedback">Copied!</span>
+                  </div>
                 </div>
-                <div class="form-group mt-3">
-                  <textarea
-                    class="form-control"
-                    name="message"
-                    id="message"
-                    rows="5"
-                    placeholder="Message"
-                    required
-                  ></textarea>
-                </div>
-                <div class="text-center">
-                  <button type="submit">Send Message</button>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -443,5 +424,43 @@
     <script src="./js/main.js"></script>
     <script src="./js/glightbox.js"></script>
     <script src="./js/isotope.js"></script>
+    <script>
+      // Function to play audio
+      function playAudio() {
+        var audio = document.getElementById('backgroundMusic');
+        audio.play().catch(function (error) {
+          console.log('Autoplay diblokir:', error);
+        });
+      }
+
+      // Event listener for body click
+      document.body.addEventListener('click', function () {
+        playAudio();
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const copyButtons = document.querySelectorAll('.copy-btn');
+
+        copyButtons.forEach((button) => {
+          button.addEventListener('click', () => {
+            const text = button.getAttribute('data-clipboard-text');
+            const feedback = button.nextElementSibling;
+
+            navigator.clipboard
+              .writeText(text)
+              .then(() => {
+                feedback.style.display = 'inline';
+                setTimeout(() => {
+                  feedback.style.display = 'none';
+                }, 2000);
+              })
+              .catch((err) => {
+                console.error('Failed to copy text: ', err);
+              });
+          });
+        });
+      });
+    </script>
   </body>
 </html>
