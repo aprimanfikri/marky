@@ -225,7 +225,7 @@ header.active {
 
 .bg-slide .content {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: scale(0) translate(-50%, -50%);
   width: 60vw;
@@ -427,7 +427,7 @@ header.active {
 
 .lead {
   position: absolute;
-  bottom: 0;
+  bottom: 50px;
   z-index: 1000;
   width: 300px;
   height: 300px;
@@ -438,6 +438,7 @@ header.active {
 
 .move-down {
   position: absolute;
+  margin-top: 10px;
   z-index: 1100;
   color: #111111;
   animation: flink 1.5s linear infinite;
@@ -946,7 +947,7 @@ section p {
   }
 
   .lead {
-    bottom: 100px;
+    bottom: 200px;
     width: 150px;
     height: 150px;
   }
@@ -960,6 +961,7 @@ section p {
   }
 
   .share {
+    bottom: 150px;
     left: 5px;
   }
 
@@ -1009,7 +1011,7 @@ section p {
   .slide-loader {
     position: absolute;
     z-index: 1100;
-    bottom: 80px;
+    bottom: 150px;
     right: 30px;
     display: flex;
     gap: 20px;
@@ -1058,6 +1060,7 @@ section p {
 
 .account-info p {
   margin: 5px 0;
+  text-decoration: none;
 }
 
 .copy-btn {
